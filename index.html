@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Add Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>🔥 Rapid Fire Quiz Game 🔥</title>
+</head>
+
+<body>
+    <a target="_blank" href="./highscore.html"><h3>HighScores</h3></a>
+
+    <section class="container text-center">
+        <h1 class="mt-4 font-size-48" id="pageTitle">Quiz Game</h1>
+        <p id="rules">Rules: This quiz game is a race to answer all questions correctly as fast as possible. Your final score is
+            the time remaining when all questions are answered. If you get a question right a new question will appear.
+            If you get a question wrong, the time will subtract 10 seconds and display a new question. If your score
+            goes below zero before all questions are answered then the quiz will end. When all
+            questions are answered the quiz will end. If the time runs out the quiz will end. </p>
+    </section>
+
+    <section>
+        <div class="container text-right">
+            <!--Timer Function-->
+            <h2 class="mt-4 font-size-24">Timer</h2>
+        </div>
+    </section>
+    <section class="d-flex justify-content-center align-items-center">
+        <div id="question"></div>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center">
+        <div id="options"></div>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center">
+        <div id="feedback"></div>
+    </section>
+
+    <section class="d-flex justify-content-center align-items-center">
+        <button id="start-game" type="button" class="btn btn-primary btn-lg">Start</button>
+    </section>
+
+     <section class="d-flex justify-content-center align-items-center" id="saveScore">
+        <form>
+            <label action="Highscore.index" id="saveHighScore">Save Highscore </label>
+            <input type="text" id="initials" placeholder="Enter Initials Here!">
+            <button type="submit" id="saveButton">Save</button>
+        </form>
+    </section> 
+
+
+
+
+
+
+
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
